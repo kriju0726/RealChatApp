@@ -18,7 +18,7 @@ const Login = () => {
       [e.target.id]: e.target.value,
     });
   };
-  console.log(userInput);
+  //console.log(userInput);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

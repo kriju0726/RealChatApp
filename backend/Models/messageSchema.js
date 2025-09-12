@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 
 const messageSchema = mongoose.Schema({
-    senderId:{
+    senderId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         required: true
     },
-    reciverId:{
+    reciverId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         required: true
@@ -20,7 +20,7 @@ const messageSchema = mongoose.Schema({
         ref: "Conversation",
         default: []
     },
-}, {timestamps: true})
+}, { timestamps: true })
 
 const Message = mongoose.model("Message", messageSchema);
 

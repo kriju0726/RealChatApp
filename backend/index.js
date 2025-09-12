@@ -10,7 +10,7 @@ import { app, server, io } from './Socket/socket.js'; // Make sure io is exporte
 
 dotenv.config();
 
-// ✅ Allow CORS for frontend (Vite dev server at 5173)
+// ✅ Allow CORS for frontend 
 app.use(cors({
     origin: "http://localhost:5173",
     credentials: true
@@ -40,4 +40,13 @@ server.listen(PORT, () => {
 
 
 
+/*
+1. CORS (Cross-Origin Resource Sharing):
+CORS allows servers to control and permit requests from different domains, improving web security and flexibility.
 
+2. Routes:
+Routes define specific endpoints in an application, mapping HTTP requests (GET, POST, etc.) to handler functions.
+
+3. Middleware:
+Middleware functions intercept requests, process data, handle authentication, logging, errors, before reaching route handlers.
+*/
